@@ -15,7 +15,7 @@ new Swiper ('.partners__content-slider', {
 		draggable: true,
 	},
 	autoHeight: true,
-	slidesPerView: 3,
+	slidesPerView: 2,
 	mousewheel: {
 		sensitivity: 1,
 		eventsTarget: '.partners__content-slider',

@@ -974,6 +974,7 @@ input {
     display: none;
   }
   .header__list._active {
+    overflow: auto;
     flex-direction: column;
     display: block;
     width: 100%;
@@ -1284,13 +1285,16 @@ input {
   }
   .news {
     margin-bottom: 30px;
+    height: 500px;
   }
   .news__title {
-    margin-bottom: 30px;
     font-size: 18px;
     font-weight: 500;
     line-height: 160%;
     color: #232735;
+  }
+  .news__slider {
+    top: 60px;
   }
   .news__slider_item {
     width: 232px !important;
