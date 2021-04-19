@@ -15,14 +15,13 @@ new Swiper ('.partners__content-slider', {
 		draggable: true,
 	},
 	autoHeight: true,
-	slidesPerView: 3.5,
+	slidesPerView: 3,
 	mousewheel: {
 		sensitivity: 1,
 		eventsTarget: '.partners__content-slider',
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 2,
 			spaceBetween: 8,
 		}
 	}
@@ -34,14 +33,13 @@ new Swiper ('.news__slider', {
 		draggable: true,
 	},
 	spaceBetween: 20,
-	slidesPerView: 2.5,
+	slidesPerView: 2,
 	mousewheel: {
 		sensitivity: 1,
 		eventsTarget: '.news__slider',
 	},
 	breakpoints: {
 		320: {
-			slidesPerView: 2,
 			spaceBetween: 8,
 		}
 	}
