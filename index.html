@@ -12,19 +12,28 @@
 		<header class="header">
             <div class="container">
                 <div class="header__body">
+                    <div class="menu__icon icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                     <div class="header__logo">
                         <a href="index.html"><img src="img/icon/LogoPN.png" alt="" class="header__logo_img"></a>
                     </div>
                     <nav class="header__nav">
                         <ul class="header__list">
-                            <li><a href="#achievement" class="header__link">Сотрудничество</a></li>
+                            <li><a href="#achievement" class="header__link hide__link">Сотрудничество</a></li>
                             <li><a href="#partners" class="header__link">Партнеры-застройщики</a></li>
                             <li><a href="#clients" class="header__link">Преимущества</a></li>
                             <li><a href="#form" class="header__link">Стать партнером</a></li>
                             <li><a href="#news" class="header__link">Новости</a></li>
-                            <li><a href="#callback" class="header__link">Контакты</a></li>
+                            <li><a href="#callback" class="header__link hide__link">Контакты</a></li>
                         </ul>
                     </nav>
+                    <div class="header__contacts_mobile">
+                        <div class="header__contacts_mobile-tel">Телефон для связи</div>
+                        <div class="header__contacts_mobile-numb">+7 (812) 335-51-36</div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -33,54 +42,104 @@
 			<section class="achievement" id="achievement">
                 <div class="achievement__body">
                     <div class="achievement__title">
-                        <div class="achievement__title-title">Вместе к новым достижениям</div>
+                        <div class="achievement__title-title">Вместе<br> к новым достижениям</div>
                         <div class="achievement__title-text">«Петербургская Недвижимость» — ведущий брокер на рынке новостроек </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="achievement__items">
-                        <div class="achievement__item">
-                            <div class="achievement__item-img">
-                               <img src="img/icon/box.svg" alt="">
+                        <div class="achievement__items_title">Мы предлагаем нашим партнерам</div>
+                        <div class="achievement__main">
+                            <div class="achievement__item">
+                                <div class="achievement__item-img">
+                                   <img src="img/icon/box.svg" alt="">
+                                </div>
+                                <div class="achievement__item-title">Разработка успешного продукта</div>
+                                <div class="achievement__item-text">Готовая концепция проекта —  от оценки земельного пятна до разработки квартирографии и планирования продаж
+                                </div>
                             </div>
-                            <div class="achievement__item-title">Разработка успешного продукта</div>
-                            <div class="achievement__item-text">Готовая концепция проекта —  от оценки земельного пятна до разработки квартирографии и планирования продаж
+                            <div class="achievement__item">
+                                <div class="achievement__item-img">
+                                   <img src="img/icon/sector.svg" alt="">
+                                </div>
+                                <div class="achievement__item-title">Аналитика и экспертиза рынка</div>
+                                <div class="achievement__item-text">Маркетинговые исследования, отчеты и прогнозы от экспертовотрасли</div>
+                            </div>
+                            <div class="achievement__item">
+                                <div class="achievement__item-img">
+                                    <img src="img/icon/message.svg" alt="">
+                                </div>
+                                <div class="achievement__item-title">Обмен опытом между лидерами рынка</div>
+                                <div class="achievement__item-text">Совместное участие в отраслевыхвыставках, конференциях, обучающих мероприятиях</div>
+                            </div>
+                            <div class="achievement__item">
+                                <div class="achievement__item-img">
+                                    <img src="img/icon/graphic.svg" alt="">
+                                </div>
+                                <div class="achievement__item-title">Рост стоимости метра</div>
+                                <div class="achievement__item-text">Эффективное позиционирование  и рост спроса за счет увеличения потока клиентов</div>
+                            </div>
+                            <div class="achievement__item">
+                                <div class="achievement__item-img">
+                                    <img src="img/icon/monitor.svg" alt="">
+                                </div>
+                                <div class="achievement__item-title">Рекламное сопровождение</div>
+                                <div class="achievement__item-text">Все виды рекламных материалов и эффективное размещение ваших объектов на площадках компании</div>
+                            </div>
+                            <div class="achievement__item">
+                                <div class="achievement__item-img">
+                                   <img src="img/icon/man.svg" alt="">
+                                </div>
+                                <div class="achievement__item-title">Полный цикл сделки</div>
+                                <div class="achievement__item-text">Принцип «одного окна» — комплексное обслуживание ваших покупателей на всем протяжении сотрудничества</div>
                             </div>
                         </div>
-                        <div class="achievement__item">
-                            <div class="achievement__item-img">
-                               <img src="img/icon/sector.svg" alt="">
+                        <div class="achievement__slider swiper-container">
+                            <div class="achievement__wrapper swiper-wrapper">
+                                <div class="achievement__item swiper-slide">
+                                    <div class="achievement__item-img">
+                                       <img src="img/icon/box.svg" alt="">
+                                    </div>
+                                    <div class="achievement__item-title">Разработка успешного продукта</div>
+                                    <div class="achievement__item-text">Готовая концепция проекта —  от оценки земельного пятна до разработки квартирографии и планирования продаж
+                                    </div>
+                                </div>
+                                <div class="achievement__item swiper-slide">
+                                    <div class="achievement__item-img">
+                                       <img src="img/icon/sector.svg" alt="">
+                                    </div>
+                                    <div class="achievement__item-title">Аналитика и экспертиза рынка</div>
+                                    <div class="achievement__item-text">Маркетинговые исследования, отчеты и прогнозы от экспертовотрасли</div>
+                                </div>
+                                <div class="achievement__item swiper-slide">
+                                    <div class="achievement__item-img">
+                                        <img src="img/icon/message.svg" alt="">
+                                    </div>
+                                    <div class="achievement__item-title">Обмен опытом между лидерами рынка</div>
+                                    <div class="achievement__item-text">Совместное участие в отраслевыхвыставках, конференциях, обучающих мероприятиях</div>
+                                </div>
+                                <div class="achievement__item swiper-slide">
+                                    <div class="achievement__item-img">
+                                        <img src="img/icon/graphic.svg" alt="">
+                                    </div>
+                                    <div class="achievement__item-title">Рост стоимости метра</div>
+                                    <div class="achievement__item-text">Эффективное позиционирование  и рост спроса за счет увеличения потока клиентов</div>
+                                </div>
+                                <div class="achievement__item swiper-slide">
+                                    <div class="achievement__item-img">
+                                        <img src="img/icon/monitor.svg" alt="">
+                                    </div>
+                                    <div class="achievement__item-title">Рекламное сопровождение</div>
+                                    <div class="achievement__item-text">Все виды рекламных материалов и эффективное размещение ваших объектов на площадках компании</div>
+                                </div>
+                                <div class="achievement__item swiper-slide">
+                                    <div class="achievement__item-img">
+                                       <img src="img/icon/man.svg" alt="">
+                                    </div>
+                                    <div class="achievement__item-title">Полный цикл сделки</div>
+                                    <div class="achievement__item-text">Принцип «одного окна» — комплексное обслуживание ваших покупателей на всем протяжении сотрудничества</div>
+                                </div>
                             </div>
-                            <div class="achievement__item-title">Аналитика и экспертиза рынка</div>
-                            <div class="achievement__item-text">Маркетинговые исследования, отчеты и прогнозы от экспертовотрасли</div>
-                        </div>
-                        <div class="achievement__item">
-                            <div class="achievement__item-img">
-                                <img src="img/icon/message.svg" alt="">
-                            </div>
-                            <div class="achievement__item-title">Обмен опытом между лидерами рынка</div>
-                            <div class="achievement__item-text">Совместное участие в отраслевыхвыставках, конференциях, обучающих мероприятиях</div>
-                        </div>
-                        <div class="achievement__item">
-                            <div class="achievement__item-img">
-                                <img src="img/icon/graphic.svg" alt="">
-                            </div>
-                            <div class="achievement__item-title">Рост стоимости метра</div>
-                            <div class="achievement__item-text">Эффективное позиционирование  и рост спроса за счет увеличения потока клиентов</div>
-                        </div>
-                        <div class="achievement__item">
-                            <div class="achievement__item-img">
-                                <img src="img/icon/monitor.svg" alt="">
-                            </div>
-                            <div class="achievement__item-title">Рекламное сопровождение</div>
-                            <div class="achievement__item-text">Все виды рекламных материалов и эффективное размещение ваших объектов на площадках компании</div>
-                        </div>
-                        <div class="achievement__item">
-                            <div class="achievement__item-img">
-                               <img src="img/icon/man.svg" alt="">
-                            </div>
-                            <div class="achievement__item-title">Полный циклсделки</div>
-                            <div class="achievement__item-text">Принцип «одного окна» — комплексное обслуживание ваших покупателей на всем протяжении сотрудничества</div>
                         </div>
                     </div>
                 </div>
@@ -88,10 +147,10 @@
             <section class="partners" id="partners">
                 <div class="partners__body">
                     <div class="container">
-                        <div class="partners__title">Наши партнеры — лидеры рынка недвижимости<br> на территории РФ</div>
+                        <div class="partners__title">Наши партнеры<br> — лидеры рынка недвижимости<br> на территории РФ</div>
                         <div class="partners__main">
                             <div class="partners__content">
-                                <div class="partners__content-text"><span>Более 700</span> партнерских сделок мы проводим каждый месяц</div>
+                                <div class="partners__content-text"><span>Более 700</span> партнерских сделок<br> мы проводим каждый месяц</div>
                                 <div class="partners__content-button">
                                     <button>Стать партнером</button>
                                 </div>
@@ -124,7 +183,7 @@
             <section class="clients" id="clients">
                 <div class="container">
                     <div class="clients__body">
-                        <div class="clients__title">Наши лояльные клиенты — это ваши будущие покупатели</div>
+                        <div class="clients__title">Наши лояльные клиенты<br> — это ваши будущие покупатели</div>
                         <div class="clients__content">
                             <div class="clients__item">
                                 <div class="clients__main">
@@ -146,7 +205,7 @@
                                         <div class="clients__main_item-img">
                                             <img src="img/icon/check.svg" alt="">
                                         </div>
-                                        <div class="clients__main_item-text">каждая 4-я сделка в «Петербургской Недвижимости»<br>
+                                        <div class="clients__main_item-text">каждая 4-я сделка в «Петербургской<br class="piter_br"> Недвижимости»<br>
                                             повторная покупка.
                                             </div>
                                     </div>
@@ -171,7 +230,7 @@
                                         <div class="clients__main_item-img">
                                             <img src="img/icon/check.svg" alt="">
                                         </div>
-                                        <div class="clients__main_item-text">региональные представительства: Калининград, Мурманск,<br> Архангельск, Норильск;
+                                        <div class="clients__main_item-text">региональные представительства:<br class="city_br"> Калининград, Мурманск,<br> Архангельск, Норильск;
                                         </div>
                                     </div>
                                     <div class="clients__main_item">
@@ -230,7 +289,7 @@
                                         текст в 2 строки</div>
                                 </div>
                             </div>
-                            <form class="form__wrapper">
+                            <form class="form__wrapper" id="form__wrapper">
                                 <div class="form__wrapper_title">Партнерская заявка</div>
                                 <input type="text" placeholder="Название застройщика" class="form__wrapper-title">
                                 <input type="text" placeholder="ФИО" class="form__wrapper-name">
@@ -274,6 +333,36 @@
                                     по всей России.</div>
                             </div>
                         </div>
+                        <div class="info__slider swiper-container">
+                            <div class="info__items swiper-wrapper">
+                                <div class="info__item swiper-slide">
+                                    <div class="info__img">
+                                        <img src="img/icon/house.svg" alt="">
+                                    </div>
+                                    <div class="info__text">За 27 лет на рынке<br class="info_br"> 350 тысяч счастливых<br class="info_br"> семей уже стали нашими клиентами.</div>
+                                </div>
+                                <div class="info__item swiper-slide">
+                                    <div class="info__img">
+                                        <img src="img/icon/pie-chart.svg" alt="">
+                                    </div>
+                                    <div class="info__text">Каждую третью квартиру<br class="info_br"> 
+                                        в новостройках Петербурга<br class="info_br"> покупают у нас.</div>
+                                </div>
+                                <div class="info__item swiper-slide">
+                                    <div class="info__img">
+                                        <img src="img/icon/people.svg" alt="">
+                                    </div>
+                                    <div class="info__text">250 профессиональных<br class="info_br"> менеджеров по продажам. </div>
+                                </div>
+                                <div class="info__item swiper-slide">
+                                    <div class="info__img">
+                                        <img src="img/icon/share.svg" alt="">
+                                    </div>
+                                    <div class="info__text">Сеть региональных дилеров<br class="info_br"> — 1257 агентов 
+                                        по всей<br class="info_br">  России.</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -287,9 +376,9 @@
                                     <div class="news__slider_item-img">
                                         <img src="img/photo/image_news_1.png" alt="">
                                     </div>
-                                    <div class="news__slider_item-title">Все о квартирах Санкт-Петербурга 
+                                    <div class="news__slider_item-title">Все о квартирах<br class="news_br"> Санкт-Петербурга<br class="news_br"> 
                                         в одном офисе</div>
-                                    <div class="news__slider_item-text">Компания работает по принципу «одного окна», позволяющему получить все услуги, связанные с покупкой квартиры, в одном офисе.</div>
+                                        <div class="news__slider_item-text">Компания работает<br class="news_br"> по принципу «одного окна»,<br class="news_br"> позволяющему получить все<br class="news_br"> услуги, связанные<br class="news_br"> с покупкой квартиры,<br class="news_br"> в одном офисе.</div>
                                     <div class="news__slider_item-about">
                                         <div class="news__slider_item-about_text"><a href="#">Подробнее</a><span><img src="/img/icon/ICON-RIGHT.svg" alt=""></span></div>
                                         <div class="news__slider_item-about_data">15.02.21</div>
@@ -299,10 +388,10 @@
                                     <div class="news__slider_item-img">
                                         <img src="img/photo/image_news_2.png" alt="">
                                     </div>
-                                    <div class="news__slider_item-title">Все о квартирах Санкт-Петербурга 
+                                    <div class="news__slider_item-title">Все о квартирах<br class="news_br"> Санкт-Петербурга<br class="news_br"> 
                                         в одном офисе</div>
-                                    <div class="news__slider_item-text">Компания работает по принципу «одного окна», позволяющему получить все услуги, связанные с покупкой квартиры, в одном офисе.</div>
-                                    <div class="news__slider_item-about">
+                                        <div class="news__slider_item-text">Компания работает<br class="news_br"> по принципу «одного окна»,<br class="news_br"> позволяющему получить все<br class="news_br"> услуги, связанные<br class="news_br"> с покупкой квартиры,<br class="news_br"> в одном офисе.</div>
+                                        <div class="news__slider_item-about">
                                         <div class="news__slider_item-about_text"><a href="#">Подробнее</a><span><img src="/img/icon/ICON-RIGHT.svg" alt=""></span></div>
                                         <div class="news__slider_item-about_data">15.02.21</div>
                                     </div>
@@ -311,9 +400,9 @@
                                     <div class="news__slider_item-img">
                                         <img src="img/photo/image_news_3.png" alt="">
                                     </div>
-                                    <div class="news__slider_item-title">Все о квартирах Санкт-Петербурга 
+                                    <div class="news__slider_item-title">Все о квартирах<br class="news_br"> Санкт-Петербурга<br class="news_br"> 
                                         в одном офисе</div>
-                                    <div class="news__slider_item-text">Компания работает по принципу «одного окна», позволяющему получить все услуги, связанные с покупкой квартиры, в одном офисе.</div>
+                                    <div class="news__slider_item-text">Компания работает<br class="news_br"> по принципу «одного окна»,<br class="news_br"> позволяющему получить все<br class="news_br"> услуги, связанные<br class="news_br"> с покупкой квартиры,<br class="news_br"> в одном офисе.</div>
                                     <div class="news__slider_item-about">
                                         <div class="news__slider_item-about_text"><a href="#">Подробнее</a><span><img src="/img/icon/ICON-RIGHT.svg" alt=""></span></div>
                                         <div class="news__slider_item-about_data">15.02.21</div>
