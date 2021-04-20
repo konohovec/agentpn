@@ -15,7 +15,7 @@ new Swiper ('.partners__content-slider', {
 		draggable: true,
 	},
 	autoHeight: true,
-	slidesPerView: 2,
+	slidesPerView: 3,
 	mousewheel: {
 		sensitivity: 1,
 		eventsTarget: '.partners__content-slider',
@@ -60,7 +60,7 @@ let elementCall = document.querySelector('#callback')
 let Visible = function (target1, target2) {
 	let targetPositionForm = {
 		top: window.pageYOffset + target1.getBoundingClientRect().top,
-	bottom: window.pageYOffset + target1.getBoundingClientRect().bottom
+		bottom: window.pageYOffset + target1.getBoundingClientRect().bottom
 	};
 	let targetPositionCall = {
 		top: window.pageYOffset + target2.getBoundingClientRect().top,

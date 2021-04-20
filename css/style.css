@@ -1011,7 +1011,12 @@ input {
     height: 219px;
     padding: 0 20px;
     justify-content: flex-start;
-
+  }
+  .achievement__item:nth-child(2) {
+    margin: 0;
+  }
+  .achievement__item:nth-child(5) {
+    margin: 0;
   }
   .achievement__title-title {
     font-family: 'PT Sans';
@@ -1048,9 +1053,8 @@ input {
     z-index: 10;
   }
   .achievement__item {
-    width: 232px !important;
     height: 263px !important;
-    margin: 0 0 27px 15px !important;
+    margin: 0 0 27px 0 !important;
   }
   .achievement__item-img {
     margin: 25px 0 10px 25px;
@@ -1307,6 +1311,7 @@ input {
   .news__slider_item-img {
     margin-bottom: 25px;
   }
+  
   .news__slider_item-title {
     font-weight: bold;
     font-family: 'PT Sans';
