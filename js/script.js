@@ -14,8 +14,7 @@ new Swiper ('.partners__content-slider', {
 		el: '.swiper-scrollbar',
 		draggable: true,
 	},
-	autoHeight: true,
-	slidesPerView: 3,
+	slidesPerView: 2.5,
 	mousewheel: {
 		sensitivity: 1,
 		eventsTarget: '.partners__content-slider',
@@ -33,7 +32,7 @@ new Swiper ('.news__slider', {
 		draggable: true,
 	},
 	spaceBetween: 20,
-	slidesPerView: 2,
+	slidesPerView: 1.7,
 	mousewheel: {
 		sensitivity: 1,
 		eventsTarget: '.news__slider',
@@ -46,11 +45,12 @@ new Swiper ('.news__slider', {
 });
 
 new Swiper ('.achievement__slider', {
-	slidesPerView: 1,
+	slidesPerView: 2,
+	
 });
 
 new Swiper ('.info__slider', {
-	slidesPerView: 1,
+	slidesPerView: 2,
 	autoHeight: true,
 	spaceBetween: 8,
 });
@@ -83,3 +83,51 @@ window.addEventListener('scroll', function() {
 });
 
 Visible (elementForm, elementCall);
+
+$(function() {
+    var btn = $('.scrollup');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, '2000');
+    });
+})
+var h_hght = 94; // высота шапки
+var h_mrg = -10; // отступ когда шапка уже не видна
+
+$(function() {
+
+    var elem = $('.header-wrapper');
+    var top = $(this).scrollTop();
+
+    if (top > h_hght) {
+        elem.css('top', h_mrg);
+    }
+
+    $(window).scroll(function() {
+        top = $(this).scrollTop();
+
+        if (top + h_mrg < h_hght) {
+            elem.css('top', (h_hght - top));
+        } else {
+            elem.css('top', h_mrg);
+        }
+    });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+});
