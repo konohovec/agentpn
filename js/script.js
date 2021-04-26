@@ -45,14 +45,28 @@ new Swiper ('.news__slider', {
 });
 
 new Swiper ('.achievement__slider', {
-	slidesPerView: 2,
+	slidesPerView: 1.3,
 	
 });
 
 new Swiper ('.info__slider', {
-	slidesPerView: 2,
+	slidesPerView: 1.5,
 	autoHeight: true,
 	spaceBetween: 8,
+	breakpoints: {
+		768: {
+			slidesPerView: 2,
+		},
+		414: {
+			slidesPerView: 1.6,
+		},
+		375: {
+			slidesPerView: 1.5,
+		},
+		320: {
+			slidesPerView: 1.3,
+		}
+	}
 });
 
 let elementForm = document.querySelector('#form__wrapper');
@@ -102,12 +116,12 @@ $(function() {
         }, '2000');
     });
 })
-var h_hght = 94; // высота шапки
-var h_mrg = -10; // отступ когда шапка уже не видна
+var h_hght = 90;
+var h_mrg = -10;
 
 $(function() {
 
-    var elem = $('.header-wrapper');
+    var elem = $('.header__body');
     var top = $(this).scrollTop();
 
     if (top > h_hght) {

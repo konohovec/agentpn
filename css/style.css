@@ -471,6 +471,7 @@ img {
   text-align: left;
 }
 .form__content {
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,8 +958,11 @@ input {
 .footer__social_item:last-child{
   margin-right: 0;
 }
-
+.clients__main_w {
+  width: 58%;
+}
 @media (min-width:768px) and (max-width: 1024px) {
+  
   .achievement__title {
     padding-left: 10px;
     padding-left: 10px;
@@ -1025,6 +1029,12 @@ input {
     margin-bottom: 10px !important; 
     height: 281px;
   }
+  .clients__main {
+    width: 50%;
+  }
+  .clients__main_item-text {
+    padding-right: 20px;
+  }
   .clients__main_title {
     margin: 25px 0 32px 85px;
   }
@@ -1073,6 +1083,9 @@ input {
 
 
 @media (max-width: 768px) {
+  .clients__main:nth-child(3) {
+    width: 100%;
+  }
   .achievement__title {
     padding-left: 0;
     padding-left: 0;
@@ -1097,7 +1110,7 @@ input {
     flex-direction: column;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     content: "";
     background: #FFFFFF;
     z-index: 79;
@@ -1158,17 +1171,14 @@ input {
   }
   .achievement__items_title {
     display: block;
-    margin-bottom: 380px;
   }
   .achievement__items {
     margin-top: 40px;
     position: relative;
+    margin-bottom: 40px;
   }
   .achievement__slider {
     display: block;
-    position: absolute !important;
-    left: 0;
-    top: 86px;
   }
   .achievement__main {
     display: none;
@@ -1177,9 +1187,8 @@ input {
     z-index: 10;
   }
   .achievement__item {
-    width: 232px !important;
     height: 263px !important;
-    margin: 0 0 27px 6px !important;
+    margin: 10px 0 27px 6px !important;
   }
   .achievement__item-img {
     margin: 25px 0 10px 25px;
@@ -1272,12 +1281,18 @@ input {
   .clients__main {
     order: 2;
   }
+  .clients__main_w {
+    width: 100%;
+  }
   .clients__img {
     text-align: center;
     order: 1;
     margin-left: 0;
     margin-bottom: 10px;
     width: 100%;
+  }
+  .second__img {
+    margin-right: 0;
   }
   .clients__main_title {
     margin: 25px 36px 10px 51px;
@@ -1370,7 +1385,6 @@ input {
   }
   .info__body{
     position: relative;
-    margin-bottom: 243px;
   }
   .info__title {
     font-weight: 500;
@@ -1378,15 +1392,13 @@ input {
     font-size: 18px;
     line-height: 160%;
     color: #232735;
+    margin-bottom: 50px;
   }
   .info__items {
     display: none;
   }
   .info__slider {
     display: block;
-    position: absolute !important;
-    top: 114px;
-    left: 0;
   }
   .info__img {
     width: 25px;
@@ -1415,6 +1427,9 @@ input {
   }
   .info__item.swiper-slide {
     padding-left: 25px;
+  }
+  .info__item.swiper-slide:first-child {
+    margin-left: 20px;
   }
   .info_br {
     display: initial;
